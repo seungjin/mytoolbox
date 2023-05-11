@@ -2,3 +2,6 @@ mg
 emacs
 jq
 tmux
+kitty-terminfo
+zsh
+xset
