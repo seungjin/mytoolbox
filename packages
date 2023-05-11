@@ -1,8 +1,10 @@
-mg
 emacs
 jq
-tmux
 kitty-terminfo
-zsh
-xset
+mg
+python3-devel
+tmux
 trash-cli
+xset
+zsh
+bind-utils
