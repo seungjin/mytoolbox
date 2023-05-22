@@ -10,3 +10,5 @@ zsh
 bind-utils
 net-tools
 mutt
+htop
+isync
