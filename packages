@@ -1,4 +1,5 @@
 bind-utils
+cyrus-sasl-plain
 emacs
 htop
 isync
