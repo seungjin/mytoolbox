@@ -8,6 +8,7 @@ mg
 mutt
 net-tools
 python3-devel
+ripgrep
 trash-cli
 w3m
 xdg-utils
