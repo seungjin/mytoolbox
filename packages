@@ -1,6 +1,7 @@
 bind-utils
 cyrus-sasl-plain
 emacs
+fd-find
 htop
 isync
 jq
