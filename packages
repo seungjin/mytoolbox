@@ -16,3 +16,4 @@ xdg-utils
 xset
 zsh
 pipx
+parallel
