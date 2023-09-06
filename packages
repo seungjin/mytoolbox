@@ -5,7 +5,6 @@ fd-find
 htop
 isync
 jq
-kitty-terminfo
 mg
 mutt
 net-tools
@@ -17,3 +16,6 @@ xdg-utils
 xset
 zsh
 gcc-c++
+pipx
+parallel
+
