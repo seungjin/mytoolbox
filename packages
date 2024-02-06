@@ -1,21 +1,12 @@
 bind-utils
 cyrus-sasl-plain
 emacs
-fd-find
 htop
 isync
 jq
 mg
 mutt
 net-tools
-python3-devel
-ripgrep
-trash-cli
-w3m
-xdg-utils
 xset
 zsh
-gcc-c++
-pipx
-parallel
 
