@@ -3,7 +3,7 @@ version: 2.1
 parameters:
   image-tag:
     type: string
-    default: <<pipeline.trigger_parameters.circleci.event_time>>
+    default: "ci-<<pipeline.number>>"
 
 jobs:
   build:
@@ -41,3 +41,4 @@ workflows:
                 - main
     jobs:
       - build
+
