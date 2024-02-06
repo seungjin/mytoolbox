@@ -5,6 +5,4 @@ RUN rpm --import https://packages.microsoft.com/keys/microsoft.asc && sh -c 'ech
 COPY packages /tmp
 RUN dnf update -y && dnf install -y $(cat /tmp/packages)
 
-RUN dnf install -y code
-
 RUN dnf clean all

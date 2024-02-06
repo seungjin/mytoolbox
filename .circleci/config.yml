@@ -3,7 +3,7 @@ version: 2.1
 parameters:
   image-tag:
     type: string
-    default: "ci-$(date +'%Y%m%d_%H%M%S')"
+    default: "$(date +'%Y%m%d_%H%M%S')"
 
 jobs:
   build:
