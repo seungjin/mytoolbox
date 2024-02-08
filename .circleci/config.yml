@@ -1,10 +1,5 @@
 version: 2.1
 
-parameters:
-  image-tag:
-    type: string
-    default: "ci-<<pipeline.number>>"
-
 jobs:
   build:
     machine:
@@ -18,14 +13,19 @@ jobs:
       - run: |
           echo "$GITHUB_ACCESS_KEY" | docker login -u seungjin --password-stdin ghcr.io
       - run: |
-          docker build -f Containerfile \
-          -t ghcr.io/seungjin/mytoolbox:<<pipeline.parameters.image-tag>> .
+          docker build -f Fedora/39/Containerfile \
+          -t ghcr.io/seungjin/mytoolbox:fedora ./Fedora/39/
       - run: |
-          docker push ghcr.io/seungjin/mytoolbox:<<pipeline.parameters.image-tag>>
+          docker push ghcr.io/seungjin/mytoolbox:fedora
       - run: |
-          docker buildx imagetools create \
-          -t ghcr.io/seungjin/mytoolbox:latest \
-          ghcr.io/seungjin/mytoolbox:<<pipeline.parameters.image-tag>>
+          docker build -f Debian/12/Containerfile \
+          -t ghcr.io/seungjin/mytoolbox:debian ./Debian/12/
+      - run: |
+          docker push ghcr.io/seungjin/mytoolbox:debian
+      #- run: |
+      #    docker buildx imagetools create \
+      #    -t ghcr.io/seungjin/mytoolbox:latest \
+      #    ghcr.io/seungjin/mytoolbox:<<pipeline.parameters.image-tag>>
 
 workflows:
   commit:
