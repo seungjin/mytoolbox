@@ -1,6 +1,6 @@
 FROM docker.io/library/debian:12
 
-RUN apt update && apt upgrade
+RUN apt update && apt upgrade -y
 
 RUN apt-get -y install wget gpg
 RUN wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
