@@ -4,3 +4,5 @@ curl
 code
 nodejs
 tmux
+libssl-dev
+pkg-config
