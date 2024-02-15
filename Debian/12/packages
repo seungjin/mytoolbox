@@ -1,7 +1,8 @@
 build-essential
 git
 curl
-code
+#code
+codium
 nodejs
 tmux
 libssl-dev
