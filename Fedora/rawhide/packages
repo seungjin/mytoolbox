@@ -1,0 +1,13 @@
+bind-utils
+cyrus-sasl-plain
+emacs
+htop
+jq
+mg
+net-tools
+xset
+zsh
+#code
+codium
+nodejs
+openssl-devel
