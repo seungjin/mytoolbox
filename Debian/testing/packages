@@ -1,10 +1,1 @@
-build-essential
-git
-curl
-#code
-codium
-nodejs
-tmux
-libssl-dev
-pkg-config
-jq
+../12/packages

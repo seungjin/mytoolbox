@@ -8,3 +8,4 @@ tmux
 libssl-dev
 pkg-config
 jq
+scrot
