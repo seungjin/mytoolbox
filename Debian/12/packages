@@ -10,3 +10,4 @@ pkg-config
 jq
 scrot
 sqlite3
+libglib2.0-bin
