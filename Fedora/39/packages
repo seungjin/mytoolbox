@@ -13,3 +13,4 @@ nodejs
 openssl-devel
 scrot
 sqlite-tools
+gnome-keyring
