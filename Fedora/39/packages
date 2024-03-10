@@ -6,6 +6,8 @@ emacs
 gnome-keyring
 htop
 jq
+libxml2
+libxml2-devel
 mg
 net-tools
 nodejs
