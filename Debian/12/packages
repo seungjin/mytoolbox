@@ -16,3 +16,4 @@ libglib2.0-bin
 redis-tools
 gnome-keyring
 cmake
+inotify-tools
