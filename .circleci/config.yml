@@ -16,10 +16,19 @@ jobs:
           docker build -f Fedora/39/Containerfile \
           -t ghcr.io/seungjin/mytoolbox:fedora ./Fedora/39/
       - run: |
+          docker build -f Fedora/rawhile/Containerfile \
+          -t ghcr.io/seungjin/mytoolbox:fedora ./Fedora/rawhide/
+      - run: |
           docker push ghcr.io/seungjin/mytoolbox:fedora
       - run: |
           docker build -f Debian/12/Containerfile \
           -t ghcr.io/seungjin/mytoolbox:debian ./Debian/12/
+      - run: |
+          docker build -f Debian/testing/Containerfile \
+          -t ghcr.io/seungjin/mytoolbox:debian ./Debian/testing/
+      - run: |
+          docker build -f Debian/experimental/Containerfile \
+          -t ghcr.io/seungjin/mytoolbox:debian ./Debian/experimental/
       - run: |
           docker push ghcr.io/seungjin/mytoolbox:debian
       #- run: |
