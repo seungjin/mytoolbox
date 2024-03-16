@@ -17,7 +17,7 @@ RUN echo 'deb [ signed-by=/usr/share/keyrings/vscodium-archive-keyring.gpg ] htt
 RUN apt install -y apt-transport-https
 RUN apt update
 
-COPY ../packages /tmp/packages
+COPY packages /tmp/packages
 RUN apt-get install -y $(cat /tmp/packages | grep "^[^#;]")
 
 
