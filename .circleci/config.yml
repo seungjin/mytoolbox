@@ -25,15 +25,11 @@ jobs:
           docker build -f Debian/12/Containerfile \
           -t ghcr.io/seungjin/mytoolbox:debian ./Debian/12/
       - run: |
-          docker build -f Debian/testing/Containerfile \
-          -t ghcr.io/seungjin/mytoolbox:debian-testing ./Debian/testing/
-      - run: |
-          docker build -f Debian/experimental/Containerfile \
-          -t ghcr.io/seungjin/mytoolbox:debian-exp ./Debian/experimental/
+          docker build -f Debian/unstable/Containerfile \
+          -t ghcr.io/seungjin/mytoolbox:debian-unstable ./Debian/unstable/
       - run: |
           docker push ghcr.io/seungjin/mytoolbox:debian
-          docker push ghcr.io/seungjin/mytoolbox:debian-testing
-          docker push ghcr.io/seungjin/mytoolbox:debian-exp
+          docker push ghcr.io/seungjin/mytoolbox:debian-unstable
       #- run: |
       #    docker buildx imagetools create \
       #    -t ghcr.io/seungjin/mytoolbox:latest \
