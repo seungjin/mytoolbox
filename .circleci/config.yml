@@ -16,7 +16,7 @@ jobs:
           docker build -f Fedora/39/Containerfile \
           -t ghcr.io/seungjin/mytoolbox:fedora ./Fedora/39/
       - run: |
-          docker build -f Fedora/rawhile/Containerfile \
+          docker build -f Fedora/rawhide/Containerfile \
           -t ghcr.io/seungjin/mytoolbox:fedora ./Fedora/rawhide/
       - run: |
           docker push ghcr.io/seungjin/mytoolbox:fedora
