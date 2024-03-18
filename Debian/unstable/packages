@@ -31,10 +31,8 @@ pigz
 pinentry
 ping
 pkg-config
-ps
 redis-tools
 rsync
-script
 scrot
 sqlite3
 libglib2.0-bin
@@ -43,5 +41,4 @@ gnome-keyring
 cmake
 inotify-tools
 file
-locale
-
+locales
