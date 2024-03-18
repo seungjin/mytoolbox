@@ -6,11 +6,8 @@ cmake
 #code
 codium
 curl
-diff
 emacs
 file
-find
-findmnt
 git
 gnome-keyring
 gpg
@@ -27,9 +24,6 @@ mg
 mount
 nodejs
 passwd
-pigz
-pinentry
-ping
 pkg-config
 redis-tools
 rsync
