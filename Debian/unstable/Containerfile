@@ -19,6 +19,7 @@ COPY packages /tmp
 RUN apt-get install -y $(cat /tmp/packages | grep "^[^#;]")
 
 ## Experimental
-RUN printf "deb https://deb.debian.org/debian experimental main" > /etc/apt/sources.list.d/experimental.list && apt update && apt -t experimental install -y glibc-source && printf "Package: glibc-source\nPin: release a=experimental\nPin-Priority: 800" > /etc/apt/preferences.d/glibc
+RUN printf "deb https://deb.debian.org/debian experimental main" > /etc/apt/sources.list.d/experimental.list && apt update
+# RUN apt -t experimental install -y glibc-source && printf "Package: glibc-source\nPin: release a=experimental\nPin-Priority: 800" > /etc/apt/preferences.d/glibc
 
 
