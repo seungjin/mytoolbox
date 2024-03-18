@@ -17,3 +17,4 @@ redis-tools
 gnome-keyring
 cmake
 inotify-tools
+file
