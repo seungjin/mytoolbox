@@ -18,6 +18,7 @@ hostname
 inotify-tools
 jq
 less
+locales
 libglib2.0-bin
 libssl-dev
 lsof
