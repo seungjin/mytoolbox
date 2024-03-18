@@ -18,3 +18,4 @@ gnome-keyring
 cmake
 inotify-tools
 file
+locale
