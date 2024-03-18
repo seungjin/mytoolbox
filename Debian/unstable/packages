@@ -1,7 +1,6 @@
 bc
 build-essential
 bzip2
-chpasswd
 cmake
 #code
 codium
@@ -14,14 +13,11 @@ gpg
 hostname
 inotify-tools
 jq
-less
 locales
 libglib2.0-bin
 libssl-dev
 lsof
-man
 mg
-mount
 nodejs
 passwd
 pkg-config
@@ -35,4 +31,3 @@ gnome-keyring
 cmake
 inotify-tools
 file
-locales
