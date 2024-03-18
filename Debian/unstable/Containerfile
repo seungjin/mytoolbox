@@ -1,8 +1,6 @@
 FROM docker.io/library/debian:unstable
 
-RUN apt update && apt upgrade -y
-
-RUN apt-get -y install wget gpg
+RUN apt update && apt upgrade -y && apt-get -y install wget gpg
 
 #RUN wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
 #RUN install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
@@ -15,16 +13,12 @@ RUN wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/p
 RUN echo 'deb [ signed-by=/usr/share/keyrings/vscodium-archive-keyring.gpg ] https://download.vscodium.com/debs vscodium main' \
  | tee /etc/apt/sources.list.d/vscodium.list
 
-RUN apt install -y apt-transport-https
-RUN apt update
+RUN apt install -y apt-transport-https && apt update
 
 COPY packages /tmp
 RUN apt-get install -y $(cat /tmp/packages | grep "^[^#;]")
 
-
 ## Experimental
-RUN printf "deb https://deb.debian.org/debian experimental main" > /etc/apt/sources.list.d/experimental.list && apt update && apt -t experimental install -y glibc-source 
-## glibc 
-RUN printf "Package: glibc-source\nPin: release a=experimental\nPin-Priority: 800" > /etc/apt/preferences.d/glibc
+RUN printf "deb https://deb.debian.org/debian experimental main" > /etc/apt/sources.list.d/experimental.list && apt update && apt -t experimental install -y glibc-source && printf "Package: glibc-source\nPin: release a=experimental\nPin-Priority: 800" > /etc/apt/preferences.d/glibc
 
 
