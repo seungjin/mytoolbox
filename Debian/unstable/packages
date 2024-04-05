@@ -32,3 +32,4 @@ cmake
 inotify-tools
 file
 tmux
+net-tools
