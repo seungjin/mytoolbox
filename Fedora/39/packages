@@ -19,3 +19,4 @@ zsh
 inotify-tools
 tmux
 cmake
+libtool
