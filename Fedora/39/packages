@@ -20,3 +20,5 @@ inotify-tools
 tmux
 cmake
 nmap-ncat
+libtool
+
