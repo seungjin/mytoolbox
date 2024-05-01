@@ -33,3 +33,4 @@ inotify-tools
 file
 tmux
 net-tools
+x11-xkb-utils
