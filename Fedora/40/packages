@@ -20,4 +20,4 @@ inotify-tools
 tmux
 cmake
 nmap-ncat
-xorg-x11-xkb-utils
+setxkbmap

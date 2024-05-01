@@ -21,4 +21,5 @@ tmux
 cmake
 nmap-ncat
 libtool
-xorg-x11-xkb-utils
+setxkbmap
+
