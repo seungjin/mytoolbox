@@ -21,3 +21,4 @@ tmux
 cmake
 nmap-ncat
 setxkbmap
+fontconfig-devel
