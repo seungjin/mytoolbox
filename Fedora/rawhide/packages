@@ -23,4 +23,5 @@ nmap-ncat
 libtool
 setxkbmap
 fontconfig-devel
+emacs-gtk+x11
 
