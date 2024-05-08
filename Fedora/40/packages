@@ -23,3 +23,4 @@ nmap-ncat
 setxkbmap
 fontconfig-devel
 emacs-gtk+x11
+clang
