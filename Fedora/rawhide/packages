@@ -25,3 +25,4 @@ setxkbmap
 fontconfig-devel
 emacs-gtk+x11
 clang
+automake
