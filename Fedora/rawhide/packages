@@ -26,3 +26,4 @@ fontconfig-devel
 emacs-gtk+x11
 clang
 automake
+perl-core
