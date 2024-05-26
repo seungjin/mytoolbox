@@ -24,6 +24,9 @@ setxkbmap
 fontconfig-devel
 emacs-gtk+x11
 clang
+clang-devel
 automake
 perl-core
 ostree-devel
+dbus-devel 
+pkgconf-pkg-config
