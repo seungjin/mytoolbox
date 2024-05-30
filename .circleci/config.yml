@@ -32,7 +32,7 @@ jobs:
           docker push ghcr.io/seungjin/mytoolbox:debian-unstable
       - run: |
           docker build -f DevContainer/Containerfile.debian \
-          -t ghcr.io/seungjin/gh-codespace-devcon ./Devcontainer/
+          -t ghcr.io/seungjin/gh-codespace-devcon ./DevContainer/
           docker push ghcr.io/seungjin/codespace-devcon:latest
 
       #- run: |
