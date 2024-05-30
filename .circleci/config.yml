@@ -30,6 +30,11 @@ jobs:
       - run: |
           docker push ghcr.io/seungjin/mytoolbox:debian
           docker push ghcr.io/seungjin/mytoolbox:debian-unstable
+      - run: |
+          docker build -f DevContainer/Containerfile.debian \
+          -t ghcr.io/seungjin/gh-codespace-devcon ./Devcontainer/
+          docker push ghcr.io/seungjin/gh-codespace-devcon:latest
+
       #- run: |
       #    docker buildx imagetools create \
       #    -t ghcr.io/seungjin/mytoolbox:latest \
