@@ -1,8 +1,6 @@
 bind-utils
-codium
 cyrus-sasl-plain
 emacs
-gnome-keyring
 htop
 jq
 libxml2
@@ -11,7 +9,6 @@ mg
 net-tools
 nodejs
 openssl-devel
-scrot
 sqlite-tools
 xset
 zsh
@@ -19,9 +16,7 @@ inotify-tools
 tmux
 cmake
 nmap-ncat
-setxkbmap
 fontconfig-devel
-emacs-gtk+x11
 clang
 clang-devel
 automake
