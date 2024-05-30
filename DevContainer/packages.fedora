@@ -9,6 +9,7 @@ mg
 net-tools
 nodejs
 openssl-devel
+scrot
 sqlite-tools
 xset
 zsh
@@ -16,6 +17,7 @@ inotify-tools
 tmux
 cmake
 nmap-ncat
+setxkbmap
 fontconfig-devel
 clang
 clang-devel
