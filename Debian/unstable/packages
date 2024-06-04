@@ -35,3 +35,4 @@ tmux
 net-tools
 x11-xkb-utils
 clang
+guix
