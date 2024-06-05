@@ -1,0 +1,19 @@
+FROM docker.io/library/debian:latest
+
+RUN apt update && apt upgrade -y && apt-get -y install guix build-essential 
+
+RUN groupadd --system guixbuild
+
+RUN for i in $(seq -w 1 10); \
+    do \
+    useradd -g guixbuild -G guixbuild \
+            -d /var/empty -s $(which nologin) \
+            -c "Guix build user $i" --system \
+            guixbuilder$i;\
+    done;
+        
+RUN guix-daemon --build-users-group=guixbuild --max-jobs=10 && \
+    guix install glibc-locales emacs \ 
+    guix pull
+
+CMD bash
