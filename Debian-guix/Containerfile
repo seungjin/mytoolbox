@@ -19,4 +19,4 @@ RUN guix-daemon --build-users-group=guixbuild --max-jobs=10 & \
     guix package -u ; \ 
     kill -9 $GUIX_DAEMON
 
-CMD guix-daemon --build-users-group=guixbuild --max-jobs=10 
+CMD guix-daemon --build-users-group=guixbuild --max-jobs=10 & bash
