@@ -16,4 +16,10 @@ RUN guix-daemon --build-users-group=guixbuild --max-jobs=10 && \
     guix install glibc-locales emacs \ 
     guix pull
 
+RUN guix-daemon --build-users-group=guixbuild --max-jobs=10 & \
+    GUIX_DAEMON=$! ; \
+    guix install glibc-locales emacs ; \ 
+    guix pull ; \
+    kill -9 $GUIX_DAEMON
+
 CMD bash
