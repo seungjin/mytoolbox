@@ -12,7 +12,7 @@ RUN for i in $(seq -w 1 10); \
             guixbuilder$i;\
     done;
 
-RUN --network=host guix-daemon --build-users-group=guixbuild --max-jobs=10 & \
+RUN guix-daemon --build-users-group=guixbuild --max-jobs=10 & \
     GUIX_DAEMON=$! ; \
     guix install glibc-locales emacs ; \
     guix pull -c 4 -M 10 ; \
