@@ -15,23 +15,19 @@ jobs:
       - run: |
           docker build -f Fedora/40/Containerfile \
           -t ghcr.io/seungjin/mytoolbox:fedora ./Fedora/40/
-      - run : |
-           docker push ghcr.io/seungjin/mytoolbox:fedora
+          docker push ghcr.io/seungjin/mytoolbox:fedora
       - run: |
           docker build -f Fedora/rawhide/Containerfile \
           -t ghcr.io/seungjin/mytoolbox:fedora-rawhide ./Fedora/rawhide/
-      - run: |
-          docker push ghcr.io/seungjin/mytoolbox:fedora-rawhide
+          docker push ghcr.io/seungjin/mytoolbox:fedora-rawhide          
       - run: |
           docker build -f Debian/12/Containerfile \
           -t ghcr.io/seungjin/mytoolbox:debian ./Debian/12/
-      - run: |
-          docker push ghcr.io/seungjin/mytoolbox:debian
+          docker push ghcr.io/seungjin/mytoolbox:debian          
       - run: |
           docker build -f Debian/unstable/Containerfile \
           -t ghcr.io/seungjin/mytoolbox:debian-unstable ./Debian/unstable/
-      - run: |
-          docker push ghcr.io/seungjin/mytoolbox:debian-unstable
+          docker push ghcr.io/seungjin/mytoolbox:debian-unstable          
       - run: |
           docker build -f DevContainer/Containerfile.debian \
           -t ghcr.io/seungjin/codespace:debian ./DevContainer/
