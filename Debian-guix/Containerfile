@@ -1,24 +1,25 @@
 FROM docker.io/library/debian:stable-slim
 
-ARG GUIX_VER=1.4.0
+#ARG GUIX_VER=1.4.0
 
-ENV PATH /root/.guix-profile/bin:$PATH
+#ENV PATH /root/.guix-profile/bin:$PATH
 
 RUN apt update && apt upgrade -y  && apt-get install -y \
     wget \
     xz-utils \
     gpg \
     git \
+    guix \
     && rm -rf /var/lib/apt/lists/*
 
-RUN cd /tmp
-RUN wget https://ftpmirror.gnu.org/gnu/guix/guix-binary-${GUIX_VER}.x86_64-linux.tar.xz
-RUN tar xJf guix-binary-${GUIX_VER}.x86_64-linux.tar.xz
-RUN mv var/guix /var/ && mv gnu /
-RUN ln -sf /var/guix/profiles/per-user/root/current-guix /root/.guix-profile
-RUN guix archive --authorize < /root/.guix-profile/share/guix/ci.guix.gnu.org.pub
-RUN guix archive --authorize < \
-     /root/.guix-profile/share/guix/bordeaux.guix.gnu.org.pub
+#RUN cd /tmp
+#RUN wget https://ftpmirror.gnu.org/gnu/guix/guix-binary-${GUIX_VER}.x86_64-linux.tar.xz
+#RUN tar xJf guix-binary-${GUIX_VER}.x86_64-linux.tar.xz
+#RUN mv var/guix /var/ && mv gnu /
+#RUN ln -sf /var/guix/profiles/per-user/root/current-guix /root/.guix-profile
+#RUN guix archive --authorize < /root/.guix-profile/share/guix/ci.guix.gnu.org.pub
+#RUN guix archive --authorize < \
+#     /root/.guix-profile/share/guix/bordeaux.guix.gnu.org.pub
 RUN groupadd --system guixbuild
 RUN for i in $(seq -w 1 10); \
     do \
