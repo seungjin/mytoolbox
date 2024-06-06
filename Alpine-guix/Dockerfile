@@ -10,6 +10,8 @@ RUN tar xJf guix-binary-${GUIX_VER}.x86_64-linux.tar.xz
 RUN mv var/guix /var/ && mv gnu /
 RUN ln -sf /var/guix/profiles/per-user/root/current-guix /root/.guix-profile
 RUN guix archive --authorize < /root/.guix-profile/share/guix/ci.guix.gnu.org.pub
+RUN guix archive --authorize < \
+     /root/.config/guix/current/share/guix/bordeaux.guix.gnu.org.pub
 RUN addgroup --system guixbuild
 RUN for i in $(seq -w 1 10); \
     do \
