@@ -4,7 +4,7 @@ ARG GUIX_VER=1.4.0
 
 ENV PATH /root/.guix-profile/bin:$PATH
 
-RUN apt update && apt upgrade -y 
+RUN apt update && apt upgrade -y  && apt install -y wget
 RUN cd /tmp
 RUN wget https://ftpmirror.gnu.org/gnu/guix/guix-binary-${GUIX_VER}.x86_64-linux.tar.xz
 RUN tar xJf guix-binary-${GUIX_VER}.x86_64-linux.tar.xz
