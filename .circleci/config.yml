@@ -36,6 +36,10 @@ jobs:
           docker build -f Debian-guix/Containerfile \
           -t ghcr.io/seungjin/debian-guix:latest ./Debian-guix/
           docker push ghcr.io/seungjin/debian-guix:latest
+      - run: |
+          docker build -f Alpine-guix/Containerfile \
+          -t ghcr.io/seungjin/alpine-guix:latest ./Alpine-guix/
+          docker push ghcr.io/seungjin/alpine-guix:latest
       #- run: |
       #    docker buildx imagetools create \
       #    -t ghcr.io/seungjin/mytoolbox:latest \
