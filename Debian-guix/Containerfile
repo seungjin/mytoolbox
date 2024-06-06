@@ -1,9 +1,17 @@
-FROM docker.io/library/debian:latest
+FROM docker.io/library/debian:stable-slim
 
-RUN apt update && apt upgrade -y && apt-get -y install guix build-essential 
+ARG GUIX_VER=1.4.0
 
+ENV PATH /root/.guix-profile/bin:$PATH
+
+RUN apt update && apt upgrade -y 
+RUN cd /tmp
+RUN wget https://ftpmirror.gnu.org/gnu/guix/guix-binary-${GUIX_VER}.x86_64-linux.tar.xz
+RUN tar xJf guix-binary-${GUIX_VER}.x86_64-linux.tar.xz
+RUN mv var/guix /var/ && mv gnu /
+RUN ln -sf /var/guix/profiles/per-user/root/guix-profile /root/.guix-profile
+RUN guix archive --authorize < /root/.guix-profile/share/guix/ci.guix.gnu.org.pub
 RUN groupadd --system guixbuild
-
 RUN for i in $(seq -w 1 10); \
     do \
     useradd -g guixbuild -G guixbuild \
@@ -11,7 +19,6 @@ RUN for i in $(seq -w 1 10); \
             -c "Guix build user $i" --system \
             guixbuilder$i;\
     done;
-
 RUN guix-daemon --build-users-group=guixbuild --max-jobs=10 & \
     GUIX_DAEMON=$! ; \
     guix install glibc-locales emacs ; \
