@@ -15,3 +15,4 @@ inotify-tools
 file
 net-tools
 clang
+guix
