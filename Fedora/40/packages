@@ -31,3 +31,4 @@ ostree-devel
 dbus-devel 
 pkgconf-pkg-config
 guile30
+zlib-ng-compat
