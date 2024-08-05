@@ -21,7 +21,6 @@ mg
 nodejs
 passwd
 pkg-config
-redis-tools
 rsync
 scrot
 sqlite3
