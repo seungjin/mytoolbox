@@ -1,4 +1,5 @@
-FROM docker.io/library/debian:unstable
+#FROM docker.io/library/debian:unstable
+FROM quay.io/toolbx-images/debian-toolbox:unstable
 
 LABEL org.opencontainers.image.source https://github.com/seungjin/mytoolbox
 	
