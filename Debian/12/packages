@@ -2,9 +2,9 @@ build-essential
 git
 curl
 #code
+#codium
 mg
 emacs
-codium
 nodejs
 tmux
 libssl-dev

@@ -1,6 +1,6 @@
 bind-utils
 #code
-codium
+#codium
 cyrus-sasl-plain
 emacs
 gnome-keyring
@@ -35,3 +35,4 @@ zlib-ng-compat
 traceroute
 gperf
 libtool
+
