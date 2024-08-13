@@ -34,3 +34,5 @@ pkgconf-pkg-config
 guile30
 zlib-ng-compat
 traceroute
+gperf
+libtool
