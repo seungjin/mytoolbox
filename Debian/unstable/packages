@@ -37,3 +37,4 @@ clang
 protobuf-compiler
 libseccomp-dev
 zsh
+kitty-terminfo
