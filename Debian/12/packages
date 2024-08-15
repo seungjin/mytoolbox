@@ -22,4 +22,5 @@ x11-xkb-utils
 clang
 protobuf-compiler
 libseccomp-dev
+kitty-terminfo
 
