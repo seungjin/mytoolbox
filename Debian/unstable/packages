@@ -3,7 +3,7 @@ build-essential
 bzip2
 cmake
 #code
-#codium
+codium
 curl
 emacs
 file
@@ -36,5 +36,5 @@ x11-xkb-utils
 clang
 protobuf-compiler
 libseccomp-dev
-zsh
 kitty-terminfo
+
