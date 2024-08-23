@@ -35,9 +35,6 @@ zlib-ng-compat
 traceroute
 gperf
 libtool
-<<<<<<< HEAD
 pinentry
-
-=======
 kitty-terminfo
->>>>>>> 593fea3b32e9e8365ad4d05bd9dbdd9abdc7815a
+
