@@ -37,4 +37,5 @@ clang
 protobuf-compiler
 libseccomp-dev
 kitty-terminfo
+argon2
 
