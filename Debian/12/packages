@@ -24,4 +24,5 @@ protobuf-compiler
 libseccomp-dev
 kitty-terminfo
 argon2
-podman-remote
+podman
+
