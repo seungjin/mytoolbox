@@ -1,6 +1,4 @@
 bind-utils
-#code
-codium
 cyrus-sasl-plain
 emacs
 gnome-keyring
@@ -40,4 +38,6 @@ kitty-terminfo
 argon2
 xsel
 podman
+oathtool
+gnupg2
 
