@@ -40,4 +40,7 @@ xsel
 podman
 oathtool
 gnupg2
+vim
+protobuf-compiler
+
 
