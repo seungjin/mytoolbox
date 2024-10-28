@@ -43,4 +43,6 @@ gnupg2
 vim
 protobuf-compiler
 zlib-ng-devel
+zlib-ng-compat-devel
+ninja-build
 
