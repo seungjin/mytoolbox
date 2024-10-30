@@ -1,0 +1,13 @@
+FROM registry.fedoraproject.org/fedora-toolbox:41
+
+RUN dnf update -y
+RUN dnf groupinstall -y Development\ Tools
+
+RUN dnf install -y jq
+
+COPY packages /tmp/
+RUN dnf install -y $(cat /tmp/packages | grep "^[^#;]")
+
+RUN dnf clean all
+
+
