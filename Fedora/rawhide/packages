@@ -1,6 +1,4 @@
 bind-utils
-#code
-#codium
 cyrus-sasl-plain
 emacs
 gnome-keyring
@@ -20,7 +18,6 @@ inotify-tools
 tmux
 cmake
 nmap-ncat
-libtool
 setxkbmap
 fontconfig-devel
 emacs-gtk+x11
@@ -29,7 +26,7 @@ clang-devel
 automake
 perl-core
 ostree-devel
-dbus-devel
+dbus-devel 
 pkgconf-pkg-config
 guile30
 zlib-ng-compat
@@ -41,3 +38,11 @@ kitty-terminfo
 argon2
 xsel
 podman
+oathtool
+gnupg2
+vim
+protobuf-compiler
+zlib-ng-devel
+zlib-ng-compat-devel
+ninja-build
+
