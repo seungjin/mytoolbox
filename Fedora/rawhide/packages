@@ -45,4 +45,5 @@ protobuf-compiler
 zlib-ng-devel
 zlib-ng-compat-devel
 ninja-build
-
+libcurl-devel
+fish
