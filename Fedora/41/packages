@@ -47,3 +47,4 @@ zlib-ng-compat-devel
 ninja-build
 libcurl-devel
 fish
+libuuid-devel
