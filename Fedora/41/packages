@@ -48,3 +48,5 @@ ninja-build
 libcurl-devel
 fish
 libuuid-devel
+gtk4-devel 
+libadwaita-devel
