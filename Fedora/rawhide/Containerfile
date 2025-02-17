@@ -1,7 +1,7 @@
 FROM registry.fedoraproject.org/fedora-toolbox:rawhide
 
 RUN dnf update -y
-RUN dnf -y group install development-tools
+RUN dnf -y group install development-tools --allowerasing
 
 RUN dnf install -y jq
 
