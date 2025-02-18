@@ -1,7 +1,7 @@
 #FROM docker.io/library/debian:unstable
 FROM quay.io/toolbx-images/debian-toolbox:unstable
 
-LABEL org.opencontainers.image.source https://github.com/seungjin/mytoolbox
+LABEL org.opencontainers.image.source=https://github.com/seungjin/mytoolbox
 	
 RUN apt update && apt upgrade -y && apt-get -y install wget gpg jq curl
 

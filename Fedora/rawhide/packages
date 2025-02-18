@@ -50,3 +50,4 @@ fish
 libuuid-devel
 gtk4-devel
 libadwaita-devel
+pinentry-tty
