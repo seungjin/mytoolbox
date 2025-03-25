@@ -54,3 +54,4 @@ pinentry-tty
 xev
 sudo-rs
 pam-devel 
+sqlite
