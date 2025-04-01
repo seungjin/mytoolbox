@@ -10,11 +10,11 @@ RUN apt update && apt upgrade -y && apt-get -y install wget gpg jq curl
 #RUN sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
 #RUN rm -f packages.microsoft.gpg
 
-RUN wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg \
-    | gpg --dearmor \
-    | dd of=/usr/share/keyrings/vscodium-archive-keyring.gpg
-RUN echo 'deb [ signed-by=/usr/share/keyrings/vscodium-archive-keyring.gpg ] https://download.vscodium.com/debs vscodium main' \
-    | tee /etc/apt/sources.list.d/vscodium.list
+# RUN wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg \
+#     | gpg --dearmor \
+#     | dd of=/usr/share/keyrings/vscodium-archive-keyring.gpg
+# RUN echo 'deb [ signed-by=/usr/share/keyrings/vscodium-archive-keyring.gpg ] https://download.vscodium.com/debs vscodium main' \
+#     | tee /etc/apt/sources.list.d/vscodium.list
 
 # https://github.com/VSCodium/vscodium/issues/1910
 #RUN export CODIUM_VER=$(curl -sL https://api.github.com/repos/VSCodium/vscodium/releases/latest | jq -r ".tag_name"); \

@@ -2,8 +2,8 @@ bc
 build-essential
 bzip2
 cmake
-#code
-codium
+# code
+# codium
 curl
 emacs
 file

@@ -1,8 +1,6 @@
 build-essential
 git
 curl
-#code
-codium
 mg
 emacs
 nodejs
