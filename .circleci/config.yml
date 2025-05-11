@@ -14,12 +14,12 @@ jobs:
           echo "$GITHUB_ACCESS_KEY" | docker login -u seungjin --password-stdin ghcr.io
       - run: |
           docker build -f Fedora/42/Containerfile \
-          -t ghcr.io/seungjin/mytoolbox:fedora42 ./Fedora/42/
-          docker push ghcr.io/seungjin/mytoolbox:fedora42
+          -t ghcr.io/seungjin/mytoolbox:fedora ./Fedora/42/
+          docker push ghcr.io/seungjin/mytoolbox:fedora
       - run: |
           docker build -f Fedora/41/Containerfile \
-          -t ghcr.io/seungjin/mytoolbox:fedora ./Fedora/41/
-          docker push ghcr.io/seungjin/mytoolbox:fedora
+          -t ghcr.io/seungjin/mytoolbox:fedora41 ./Fedora/41/
+          docker push ghcr.io/seungjin/mytoolbox:fedora41
       - run: |
           docker build -f Fedora/rawhide/Containerfile \
           -t ghcr.io/seungjin/mytoolbox:fedora-rawhide ./Fedora/rawhide/
