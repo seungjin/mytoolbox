@@ -48,10 +48,14 @@ ninja-build
 libcurl-devel
 fish
 libuuid-devel
-gtk4-devel
+gtk4-devel 
 libadwaita-devel
 pinentry-tty
 xev
 sudo-rs
 pam-devel 
 sqlite
+youtube-dl
+pandoc
+oniguruma-devel
+

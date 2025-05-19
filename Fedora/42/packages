@@ -57,3 +57,5 @@ pam-devel
 sqlite
 youtube-dl
 pandoc
+oniguruma-devel
+
