@@ -58,4 +58,5 @@ sqlite
 youtube-dl
 pandoc
 oniguruma-devel
-
+blueprint-compiler
+gtk4-layer-shell-devel
