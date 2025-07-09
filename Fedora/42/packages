@@ -60,3 +60,10 @@ pandoc
 oniguruma-devel
 blueprint-compiler
 gtk4-layer-shell-devel
+libdisplay-info-devel
+libinput-devel
+libseat-devel
+libxkbcommon-devel
+mesa-libgbm-devel
+pipewire-devel
+
