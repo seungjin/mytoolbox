@@ -67,3 +67,5 @@ libxkbcommon-devel
 mesa-libgbm-devel
 pipewire-devel
 scdoc
+libglvnd-gles
+wisplays
