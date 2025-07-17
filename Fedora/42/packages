@@ -52,6 +52,7 @@ gtk4-devel
 libadwaita-devel
 pinentry-tty
 xev
+wev #xev for wayland
 sudo-rs
 pam-devel 
 sqlite
@@ -69,3 +70,4 @@ pipewire-devel
 scdoc
 libglvnd-gles
 wdisplays
+
