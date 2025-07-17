@@ -51,8 +51,8 @@ libuuid-devel
 gtk4-devel 
 libadwaita-devel
 pinentry-tty
-xev
-wev #xev for wayland
+#xev
+wev
 sudo-rs
 pam-devel 
 sqlite
