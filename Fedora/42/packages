@@ -73,3 +73,5 @@ wdisplays
 gtk4
 libdrm-devel
 meson
+wayland-protocols-devel
+
