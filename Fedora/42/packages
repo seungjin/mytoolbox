@@ -71,4 +71,5 @@ scdoc
 libglvnd-gles
 wdisplays
 gtk4
-
+libdrm-devel
+meson
