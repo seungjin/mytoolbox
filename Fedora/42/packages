@@ -74,4 +74,10 @@ gtk4
 libdrm-devel
 meson
 wayland-protocols-devel
+zstd
+alsa-lib-devel
+libpcap-devel
+libxdo
+libxdo-devel
+
 
