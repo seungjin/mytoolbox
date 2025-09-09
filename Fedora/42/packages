@@ -79,5 +79,11 @@ alsa-lib-devel
 libpcap-devel
 libxdo
 libxdo-devel
-
-
+magick
+poppler-utils
+p7zip
+p7zip-plugins
+wl-copy
+libavif-devel
+libjxl-devel
+chafa
