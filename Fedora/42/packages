@@ -56,6 +56,7 @@ wev
 sudo-rs
 pam-devel 
 sqlite
+sqlite-devel
 youtube-dl
 pandoc
 oniguruma-devel
@@ -87,3 +88,8 @@ wl-copy
 libavif-devel
 libjxl-devel
 chafa
+git-lfs
+libsoup3-devel
+javascriptcoregtk4.0-devel
+webkit2gtk4.1-devel
+
