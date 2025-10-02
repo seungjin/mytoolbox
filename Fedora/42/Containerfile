@@ -1,5 +1,8 @@
 FROM registry.fedoraproject.org/fedora-toolbox:42
 
+
+ARG NU_VERSION=0.107.0
+
 RUN dnf update -y
 RUN dnf -y group install development-tools
 
@@ -11,7 +14,7 @@ RUN dnf install -y $(cat /tmp/packages | grep "^[^#;]")
 RUN dnf clean all
 
 RUN ln -s /usr/bin/fish /usr/local/bin/fish
-RUN ln -s /usr/bin/nu /usr/local/bin/nu
+RUN curl -L "https://github.com/nushell/nushell/releases/download/${NUSHELL_VERSION}/nu-${NUSHELL_VERSION}-x86_64-unknown-linux-gnu.tar.gz" | tar -xz -C /tmp && mv /tmp/nu-${NUSHELL_VERSION}-x86_64-unknown-linux-gnu/nu /usr/local/bin/ && chmod +x /usr/local/bin/nu && rm -rf /tmp/nu-${NUSHELL_VERSION}-x86_64-unknown-linux-gnu
 
 RUN curl -s -o /usr/local/bin/kubectl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl" && chmod +x /usr/local/bin/kubectl && git clone --depth 1 https://github.com/ahmetb/kubectx /opt/kubectx && ln -s /opt/kubectx/kubectx /usr/local/bin/kubectx && ln -s /opt/kubectx/kubens /usr/local/bin/kubens
 
