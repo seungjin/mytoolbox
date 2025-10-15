@@ -15,11 +15,11 @@ jobs:
       - run: |
           docker build -f Fedora/42/Containerfile \
           -t ghcr.io/seungjin/mytoolbox:fedora ./Fedora/42/
-          docker push ghcr.io/seungjin/mytoolbox:fedora
+          docker push ghcr.io/seungjin/mytoolbox:fedora-42
       - run: |
           docker build -f Fedora/41/Containerfile \
           -t ghcr.io/seungjin/mytoolbox:fedora41 ./Fedora/41/
-          docker push ghcr.io/seungjin/mytoolbox:fedora41
+          docker push ghcr.io/seungjin/mytoolbox:fedora-41
       - run: |
           docker build -f Fedora/rawhide/Containerfile \
           -t ghcr.io/seungjin/mytoolbox:fedora-rawhide ./Fedora/rawhide/
@@ -27,7 +27,7 @@ jobs:
       - run: |
           docker build -f Debian/13/Containerfile \
           -t ghcr.io/seungjin/mytoolbox:debian ./Debian/13/
-          docker push ghcr.io/seungjin/mytoolbox:debian  
+          docker push ghcr.io/seungjin/mytoolbox:debian-13  
       - run: |
           docker build -f Debian/12/Containerfile \
           -t ghcr.io/seungjin/mytoolbox:debian-12 ./Debian/12/
