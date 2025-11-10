@@ -2,6 +2,7 @@ bind-utils
 cyrus-sasl-plain
 emacs
 gnome-keyring
+glibc-langpack-en
 htop
 jq
 libxml2
