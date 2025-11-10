@@ -10,6 +10,7 @@ mg
 net-tools
 nodejs
 openssl-devel
+procps-ng
 scrot
 sqlite-tools
 xset
