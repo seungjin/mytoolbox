@@ -10,6 +10,7 @@ libxml2-devel
 mg
 net-tools
 nodejs
+nmap
 openssl-devel
 procps-ng
 scrot
